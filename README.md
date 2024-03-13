@@ -48,7 +48,7 @@ python gaze_processing.py \
     --raw_data_fold /path/to/your/raw/data/fold
 ```
 
-The key function is in [util/gaze_process.py]() as follow. You can use this function to process other forms of Gaze data as JSON files.
+The key function is in [util/gaze_process.py](https://github.com/YanKong0408/Gaze-DETR/blob/main/util/gaze_process.py) as follow. You can use this function to process other forms of Gaze data as JSON files.
 ``` Python
 from util.gaze_process import gaze_box2json
 gaze_box2json(images, gazes, boxes, json_file, gaze_only = True)
