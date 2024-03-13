@@ -39,6 +39,36 @@ Gaze tracks can be seamlessly obtained during the bounding box annotation proces
 
 ### Gaze-DETR
 Code is based upon [Dino](https://github.com/IDEA-Research/DINO).
+
+The data can be obtained from the 'json' file split resulting from the above step and should be organized into the coco dataset format.
+```
+Your_Fold/
+  └── annotations/
+  	├── instances_train2017.json
+  	└── instances_val2017.json
+```
+
+#### Train
+``` sh
+python main.py \
+    --output_dir ... \
+    -c config/Gaze_DINO/Gaze_DINO_swin.py \
+    --options batch_size=1 \
+    --coco_path ...
+    --resume ...
+```
+
+#### Inference
+``` sh
+python main.py \
+    --output_dir ... \
+    -c config/Gaze_DINO/Gaze_DINO_swin.py \
+    --options batch_size=1 \
+    --coco_path ...
+    --resume ...
+    --eval
+```
+
 ## Performance
 Our comprehensive tests confirm that Gaze-DETR surpasses existing leading methods, showcasing remarkable improvements in detection accuracy and generalizability. 
 
