@@ -5,7 +5,7 @@
 
 <div align="center">
     <a href= class="button"><b>[checkpoint]</b></a> &nbsp;&nbsp;&nbsp;&nbsp;
-    <a href= class="button"><b>[arXiv]</b></a> &nbsp;&nbsp;&nbsp;&nbsp;
+    <a href= class="button"><b>[paper]</b></a> &nbsp;&nbsp;&nbsp;&nbsp;
 </div>
 
 ## Method
