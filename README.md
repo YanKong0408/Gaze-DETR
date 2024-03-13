@@ -20,7 +20,7 @@
 ## Performance
 Our comprehensive tests confirm that Gaze-DETR surpasses existing leading methods, showcasing remarkable improvements in detection accuracy and generalizability. 
 
-| Method                  | backbone | AP<sub>0.2:0.5<\sub> | AP<sub>0.2<\sub> | AP<sub>0.5<\sub> |     AR    |
+| Method                  | backbone | AP<sub>0.2:0.5 | AP<sub>0.2 | AP<sub>0.5|     AR    |
 |-------------------------|----------|:--------------------:|:----------------:|:----------------:|:---------:|
 | RetinaNet (ICCV 2017)    | Resnet50 |         0.466        |       0.533      |       0.326      |   0.850   |
 | YoloV8                  | Resnet50 |         0.482        |       0.587      |       0.333      |   0.866   |
