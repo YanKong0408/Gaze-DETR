@@ -15,6 +15,27 @@
 
 ### Installation
 
+We test our models under ```python=3.7.3,pytorch=1.9.0,cuda=11.1```. Other versions might be available as well.
+
+```sh
+# Clone this repo
+git clone https://github.com/YanKong0408/Gaze-DETR.git
+cd Gaze-DETR
+
+# Install Pytorch and torchvision
+# We test our models under `python=3.7.3,pytorch=1.9.0,cuda=11.1`. Other versions might be available as well.
+conda install -c pytorch pytorch torchvision
+
+# Install other needed packages
+pip install -r requirements.txt
+
+# Compiling CUDA operators
+cd models/Gaze-Dino/ops
+python setup.py build install
+python test.py
+cd ../../..
+```
+
 ### Gaze Processing
 
 ### Gaze-DETR
