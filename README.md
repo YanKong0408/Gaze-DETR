@@ -18,8 +18,10 @@
 ### Gaze-DETR
 
 ## Performance
-In M1 Pro, LoRA is about 1.8x~1.9x faster.
-```python performance_profile.py``` should do the time profiler now. More test will come soon.
+Our comprehensive tests confirm that Gaze-DETR surpasses existing leading methods, showcasing remarkable improvements in detection accuracy and generalizability. 
+
+More experiment results are shown in [our paper]().
+More test will come soon.
 
 ## Citation
 Use this bibtex to cite this repository:
