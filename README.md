@@ -13,6 +13,8 @@
 
 ## Usage
 
+### Installation
+
 ### Gaze Processing
 
 ### Gaze-DETR
