@@ -15,7 +15,6 @@
 ## Usage
 
 ### Install
-We test our models under ```python=3.7.3,pytorch=1.9.0,cuda=11.1```. Other versions might be available as well.
 
 ```sh
 # Clone this repo
