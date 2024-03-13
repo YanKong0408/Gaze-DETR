@@ -35,6 +35,7 @@ cd ../../..
 ```
 
 ### Gaze Processing
+Gaze tracks were seamlessly obtained during the bounding box annotation process, utilizing software [Miceye](https://github.com/JamesQFreeman/MICEYE).
 
 ### Gaze-DETR
 
