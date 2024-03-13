@@ -16,3 +16,13 @@
 ### Gaze Processing
 
 ### Gaze-DETR
+
+## Performance
+In M1 Pro, LoRA is about 1.8x~1.9x faster.
+```python performance_profile.py``` should do the time profiler now. More test will come soon.
+
+## Citation
+Use this bibtex to cite this repository:
+```
+
+```
