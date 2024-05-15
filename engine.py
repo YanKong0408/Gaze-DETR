@@ -48,7 +48,11 @@ def train_one_epoch(model: torch.nn.Module, criterion: torch.nn.Module,
                                           'iscrowd':t['iscrowd'][t['labels'] != gaze_class],
                                           'orig_size':t['orig_size'],
                                           'size':t['size']} for t in all_targets]
-
+        if epochs >= args.two_stage_epoch:
+            target = without_gaze_targets
+        else:
+            target = with_gaze_targets
+          
         with torch.cuda.amp.autocast(enabled=args.amp):
             if need_tgt_for_training:
                 outputs = model(samples, targets)
