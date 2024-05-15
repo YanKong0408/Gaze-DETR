@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-def gaze_process(gaze_seqs,img_name, image_shape, min_w= 128, min_h=128, GuassKernal=(159,159), thre=0.1):
+def gaze_process(gaze_seqs,img_name, image_shape, min_w= 128, min_h=128, GuassKernal=(119,119), thre=0.1):
     ### process gaze from gaze sequences to gaze boxes
     # input: 
     #   gaze_seqs:[[x, y], [x, y], ...]
@@ -24,10 +24,7 @@ def gaze_process(gaze_seqs,img_name, image_shape, min_w= 128, min_h=128, GuassKe
                     norm_type=cv2.NORM_MINMAX, dtype=cv2.CV_32F)
     g_expend=cv2.applyColorMap((g*255).astype(np.uint8), cv2.COLORMAP_JET)
     img=cv2.imread(img_name)
-    print(img.shape,g_expend.shape)
     heapmapimage = cv2.addWeighted(img,0.7,g_expend,0.3,0)
-    print('d:\INbreast_det\ALL-Gaze-Heatmap\\'+img_name.rsplit("\\")[-1])
-    cv2.imwrite('d:\\INbreast_det\\ALL-Gaze-Heatmap\\'+img_name.rsplit("\\")[-1],heapmapimage)
     _, thresholded_map = cv2.threshold(g.T, thre, 1, cv2.THRESH_BINARY)
     contours, _ = cv2.findContours(np.uint8(thresholded_map), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
     gaze_boxs=[]
