@@ -3,7 +3,7 @@ import cv2
 import json
 import os
 import csv
-from gaze_process_1 import *
+from util.gaze_process import *
 
 
 def get_args_parser():
