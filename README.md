@@ -55,7 +55,7 @@ from util.gaze_process import gaze_box2json
 gaze_box2json(images, gazes, boxes, json_file, gaze_only = True)
 ```
 
-### Gaze-DETR
+### Model
 Our code is based on [DINO](https://github.com/IDEA-Research/DINO).
 
 Data can be obtained from the json file split resulting from the above step and should be organized into the coco dataset format.
