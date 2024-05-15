@@ -1,11 +1,11 @@
 # Gaze-DETR: Using Expert Gaze to Reduce False Positives in Vulvovaginal Candidiasis Screening
-
+MICCAI2024 Early accept!!! 
 ![Intro](./image/intro.png)
 
 ## Useful links
 
 <div align="center">
-    <a href="" class="button"><b>[Checkpoint]</b></a> &nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="https://pan.baidu.com/s/1bG1RB-wod8PIE0MJ3EhWJg?pwd=gaze" class="button"><b>[Checkpoint]</b></a> &nbsp;&nbsp;&nbsp;&nbsp;
     <a href="" class="button"><b>[Paper]</b></a> &nbsp;&nbsp;&nbsp;&nbsp;
 </div>
 
