@@ -39,9 +39,15 @@ def train_one_epoch(model: torch.nn.Module, criterion: torch.nn.Module,
 
     _cnt = 0
     for samples, targets in metric_logger.log_every(data_loader, print_freq, header, logger=logger):
-
+        gaze_class = args.
         samples = samples.to(device)
-        targets = [{k: v.to(device) for k, v in t.items()} for t in targets]
+        with_gaze_targets = [{k: v.to(device) for k, v in t.items()} for t in targets]
+        without_gaze_targets = [{'boxes':t['boxes'][t['labels'] != gaze_class],
+                                          'labels':t['labels'][t['labels'] != gaze_class],
+                                          'image_id':t['image_id'],'area':t['area'][t['labels'] != gaze_class],
+                                          'iscrowd':t['iscrowd'][t['labels'] != gaze_class],
+                                          'orig_size':t['orig_size'],
+                                          'size':t['size']} for t in all_targets]
 
         with torch.cuda.amp.autocast(enabled=args.amp):
             if need_tgt_for_training:
