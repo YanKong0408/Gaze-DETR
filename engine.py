@@ -39,7 +39,7 @@ def train_one_epoch(model: torch.nn.Module, criterion: torch.nn.Module,
 
     _cnt = 0
     for samples, targets in metric_logger.log_every(data_loader, print_freq, header, logger=logger):
-        gaze_class = args.
+        gaze_class = args.gaze_only_class
         samples = samples.to(device)
         with_gaze_targets = [{k: v.to(device) for k, v in t.items()} for t in targets]
         without_gaze_targets = [{'boxes':t['boxes'][t['labels'] != gaze_class],
