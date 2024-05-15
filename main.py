@@ -34,6 +34,7 @@ def get_args_parser():
         'in xxx=yyy format will be merged into config file.')
 
     # dataset parameters
+    parser.add_argument('--two_stage_epoch', type=int, default=5)
     parser.add_argument('--dataset_file', default='coco')
     parser.add_argument('--coco_path', type=str, default='/comp_robot/cv_public_dataset/COCO2017/')
     parser.add_argument('--coco_panoptic_path', type=str)
