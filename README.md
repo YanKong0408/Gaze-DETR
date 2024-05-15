@@ -1,5 +1,6 @@
 # Gaze-DETR: Using Expert Gaze to Reduce False Positives in Vulvovaginal Candidiasis Screening
-MICCAI2024 Early accept!!! 
+MICCAI 2024 early accept!!! 
+
 ![Intro](./image/intro.png)
 
 ## Useful links
