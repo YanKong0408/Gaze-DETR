@@ -105,4 +105,12 @@ More test will come soon.
 ## Citation
 Use this bibtex to cite this repository:
 ```
+@misc{kong2024gazedetr,
+      title={Gaze-DETR: Using Expert Gaze to Reduce False Positives in Vulvovaginal Candidiasis Screening}, 
+      author={Yan Kong and Sheng Wang and Jiangdong Cai and Zihao Zhao and Zhenrong Shen and Yonghao Li and Manman Fei and Qian Wang},
+      year={2024},
+      eprint={2405.09463},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
 ```
