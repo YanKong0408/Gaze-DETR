@@ -6,7 +6,7 @@
 ## Useful links
 
 <div align="center">
-    <a href="" class="button"><b>[Paper]</b></a> &nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="https://arxiv.org/pdf/2405.09463" class="button"><b>[Paper]</b></a> &nbsp;&nbsp;&nbsp;&nbsp;
     <a href="https://pan.baidu.com/s/1bG1RB-wod8PIE0MJ3EhWJg?pwd=gaze" class="button"><b>[Checkpoint of Gaze-Dino-Res50]</b></a> &nbsp;&nbsp;&nbsp;&nbsp;
     <a href="https://pan.baidu.com/s/1bG1RB-wod8PIE0MJ3EhWJg?pwd=gaze" class="button"><b>[Checkpoint of Gaze-Dino-Swin]</b></a> &nbsp;&nbsp;&nbsp;&nbsp;
 </div>
@@ -98,7 +98,7 @@ Our comprehensive tests confirm that Gaze-DETR surpasses existing leading method
 | Gaze-DN-DETR             | Resnet50 |      0.554     |    0.690   |    0.335   |   0.878   |
 | Gaze-DINO                |  Swin-L  |    **0.687**   |  **0.755** |  **0.585** | **0.988** |
 
-More experiment results are shown in [our paper]().
+More experiment results are shown in [our paper](https://arxiv.org/pdf/2405.09463).
 
 More test will come soon.
 
