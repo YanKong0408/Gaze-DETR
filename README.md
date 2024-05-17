@@ -68,7 +68,7 @@ Your_Fold/
 
 Train
 ``` sh
-python mian.py \
+python main.py \
     --output_dir  /path/to/your/output/dir \
     -c config/Gaze-DINO/Gaze_DINO_swin.py \
     --options batch_size=1 \
